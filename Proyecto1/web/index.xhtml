@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="card-panel hoverable">
+                <h2 class="center-align">Calculdora</h2>                
+            </div>
+            <div class="row">
+                <form class="col s12" action="" method="POST" name="formulario">
+		    <div class="row">        
+                        <div class="input-field col s6">
+                                <i class="material-icons prefix">filter_1</i>
+                                <input id="icon_telephone" type="num" name="num1" class="validate"/>
+                                <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s6">
+                                <i class="material-icons prefix">filter_2</i>
+                                <input id="icon_birthdate" type="num" name="num2" class="validate"/>
+                                <label for="icon_birthdate">Birthdate</label>
+                        </div>
+                        <div class="input-field col s6">
+                                <i class="material-icons prefix">list</i>
+                                <select name="oper">
+                                        <option value="" disabled selected>Seleccione Operación</option>
+                                        <option value="sum">+</option>
+                                        <option value="res">-</option>
+                                        <option value="mul">*</option>
+                                        <option value="div">/</option>
+                                    </select>
+                                    <label>Genero</label>
+                        </div>                           
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Send
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </h:body>
+</html>
+
